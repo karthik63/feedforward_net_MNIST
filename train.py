@@ -445,8 +445,8 @@ def train(X, Y, Xvalid, Yvalid, path_to_loss_logs, path_to_error_logs):
 
                 nn_gradients.fill(0)
 
-                print("Epoch " + str(a1) + ", Step " + str(num_points_seen) + ", Loss: " + str(
-                    net_loss / batch_size) + ", lr: " + str(lr))
+                #print("Epoch " + str(a1) + ", Step " + str(num_points_seen) + ", Loss: " + str(
+                #    net_loss / batch_size) + ", lr: " + str(lr))
 
                 hundred_loss += net_loss
                 hundred_num_correct += num_correct
@@ -501,7 +501,7 @@ def test(X, Y, path_to_predict_file):
         f.write(str(str(prediction) + '\n'))
         f.close()
 
-    print("Accuracy is " + str(num_correct / num_testcases))
+    #print("Accuracy is " + str(num_correct / num_testcases))
 
 
 def master():
