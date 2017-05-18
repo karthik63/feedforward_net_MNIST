@@ -32,7 +32,7 @@ momentum = float(args.momentum)
 
 batch_size = int(args.batch_size)
 
-max_epochs = 10
+max_epochs = 70
 
 test_temp = args.activation
 if test_temp == 'tanh':
